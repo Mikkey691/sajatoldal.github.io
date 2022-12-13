@@ -1,0 +1,63 @@
+﻿body {
+	font-size: 11pt;
+	background-image: url(bg.png);
+	margin: 0px;
+	padding: 0px;
+}
+
+p{
+	
+}
+
+p.bev{
+	
+}
+
+
+hr {
+	
+}
+
+h1, h2 {
+	
+	padding: 5px;
+}
+
+h2 {
+	
+}
+
+#tartalom {
+	
+	margin: 0 auto 0 auto;
+	text-align: left;
+	
+}
+
+#oszlop1, #oszlop2, #oszlop3 {
+    float: left;
+    padding: 0px;
+   	
+}
+
+img {
+
+	width: 240px;
+
+}
+
+a:link {
+
+	
+}
+
+#lablec {
+    clear: both;
+    
+}
+
+.container 
+{
+background-color: aqua;
+
+}

@@ -1,0 +1,12 @@
+#container {
+    background-image: url(pics/1.jpg); background-repeat:no-repeat;
+}
+
+#text {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+#keret{
+    height: 100wh;
+}

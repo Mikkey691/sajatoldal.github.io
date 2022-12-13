@@ -1,0 +1,25 @@
+body {
+    background-color: lightcoral;
+}
+#bal {
+    background-color: #56daae;
+}
+
+#jobb {
+    background-color: #17cf5c;
+}
+
+h1{
+    text-align: center;
+    color: #12dd22;
+    background-color: antiquewhite;
+    border-collapse: separate;
+    border-spacing: 10px;
+    border-radius: 10px;
+}
+
+a{
+    color: #217408;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
