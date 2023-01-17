@@ -83,6 +83,88 @@ legidosebb=emberek[0]
 <p>
 legfiatalabb=emberek[0]
 </p>
+        
+        
+        
+        ///////////////////////////////////
+        
+        bank=500 
+import random
+kartyak=[1,2,3,4,5,6,7,8,9,10,10,10,10]
+
+sajat=[] 
+gep=[]
+Menu=int(input("Tovabb : 1: igen 2: nem"))
+if Menu==2:
+    print("Koszonjuk")
+
+while Menu==1:
+
+    print("A bankban : ",bank)
+    tet=int(input("Adjon egy tétet: "))
+
+
+    while len(sajat)<2:
+        sajat.append(random.choice(kartyak))
+    print("A lapjai: ", sajat)
+
+    while len(gep)<2:
+        gep.append(random.choice(kartyak)) 
+    print("A gép lapjai: ", gep)
+
+    menu2=int(input("1: check  2: stop "))
+    if menu2==1:
+        sajat.append(random.choice(kartyak))
+        print("A lapjai: ", sajat)
+        
+        if sum(sajat)>21:
+            print("End")
+            bank-=tet
+            print("A bankban: ",bank)
+        elif sum(sajat)==21:
+            print("Win")
+            bank+=tet
+            print("A bankban: ",bank)
+        else:
+            print("A gép huz")
+            gep.append(random.choice(kartyak))
+            print("Bot lapjai : ", gep)
+            
+            if sum(sajat)>sum(gep) and sum(sajat)<=21:
+                print("Win")
+                bank+=tet
+                print("Az egyenlege: ",bank)
+            if sum(sajat)<sum(gep) and sum(gep)<=21:
+                print("Lose")
+                bank-=tet
+                print("Az egyenlege: ",bank)
+            if sum(gep)>21:
+                print("Win")
+                bank+=tet
+                print("Az egyenlege: ",bank)
+            
+    else:
+        print("A boz húz")
+        gep.append(random.choice(kartyak))
+        print("A bot lapjai: ", gep)
+        if sum(sajat)>sum(gep) and sum(sajat)<=21:
+           print("win")
+           bank=tet
+           print("Az egyenlege: ",bank)
+        elif sum(sajat)<sum(gep) and sum(gep)<=21:
+           print("loose")
+           bank-=tet
+           print("Az egyenlege: ",bank)
+        elif sum(gep)>21:
+           print("win")
+           bank+=tet
+           print("Az egyenlege: ",bank)
+        elif sum(gep)==21:
+           print("loose")
+           bank-=tet
+           print("Az egyenlege: ",bank)
+      
+    Menu=int(input("Vége a játéknak :)"))
 
     
 
